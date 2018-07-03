@@ -1,0 +1,13 @@
+/*
+    bootstrapのスタイル書き換え
+    https://github.com/react-boilerplate/react-boilerplate/issues/620#issuecomment-250113453
+*/
+
+:global .navbar {
+    margin-bottom: 0;
+}
+
+:global .navbar-text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

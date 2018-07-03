@@ -1,0 +1,75 @@
+.base {
+}
+
+.base ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #CCC;
+}
+
+.base li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #CCC;
+}
+
+.base li > a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.base li > a:hover {
+    border-left-color: #2673E8;
+    background-color: #F5F5F5;
+}
+
+.base li.is-selected > a {
+    color: #FFF;
+    background-color: #2673E8;
+}
+
+.FavoriteList-updated {
+    display: block;
+    font-size: 11px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.base li.is-selected > a .FavoriteList-updated {
+    color: #FFF;
+}
+
+.base li.moreItems > span {
+    padding: 4px 0;
+    display: block;
+    color: #f5f5f5;
+    font-size: 15px;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    background-color: #999;
+    cursor: pointer;
+}
+
+.base li.loading > span {
+    padding: 10px;
+    display: block;
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}

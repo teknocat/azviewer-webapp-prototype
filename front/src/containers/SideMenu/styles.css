@@ -1,0 +1,95 @@
+.base {
+    display: flex;
+}
+
+.sideMenu {
+    position: relative;
+}
+
+.sideMenuClosed {
+    composes: closed from "../../components/layout/base.css"
+}
+
+.menuButton {
+    position: absolute;
+    width: 24px;
+    height: 96px;
+    right: -24px;
+    top: 40vh;
+    /*top: 10vh;*/
+    background-color: #CCCCCC;
+    opacity: 0.5;
+    border: 1px solid;
+    z-index: 1;
+}
+
+.menuButton button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    /*text-indent: -9999px;*/
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.list {
+    width: 280px;
+    height: calc(100vh - 55px);
+    border-right: 1px solid #CCC;
+    overflow: auto;
+}
+
+.listHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 5px 10px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    border: 1px solid #CCC;
+}
+
+.navigation {
+    margin-top: 40px;
+}
+
+.main {
+    flex: 1;
+    width: 0;
+}
+
+.search {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.filterType ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filterType li {
+    margin: 0;
+    /*padding: 0;*/
+    display: inline-block;
+    padding-right: 2px;
+}
+
+.filterType li > a {
+    padding: 8px;
+}
+
+.filterType li.isSelected > a {
+    color: #FFF;
+    background-color: #2673E8;
+    font-weight: bold;
+}
